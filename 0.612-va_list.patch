@@ -1,0 +1,13 @@
+In file included from decompress_demo.c:26:0:
+Lrzip.h:134:119: error: expected declaration specifiers or ‘...’ before ‘va_list’
+
+--- origsrc/lrzip-0.612/Lrzip.h	2012-03-07 01:49:44.000000000 -0600
++++ src/lrzip-0.612/Lrzip.h	2012-03-29 22:57:12.864973400 -0500
+@@ -20,6 +20,7 @@
+ #ifndef LIBLRZIP_H
+ #define LIBLRZIP_H
+ 
++#include <stdarg.h>
+ #include <stdbool.h>
+ #include <stdio.h>
+ #ifdef _WIN32

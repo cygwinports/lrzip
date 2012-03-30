@@ -1,0 +1,9 @@
+category: Archive
+requires: liblrzip0 libbz2-devel liblzo2-devel zlib-devel
+external-source: lrzip
+sdesc: "Long Range ZIP archive library (development)"
+ldesc: "This is a compression program optimised for large files. The 
+larger the file and the more memory you have, the better the compression 
+advantage this will provide, especially once the files are larger than 
+100MB. The advantage can be chosen to be either size (much smaller than 
+bzip2) or speed (much faster than bzip2)."
