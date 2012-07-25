@@ -1,0 +1,21 @@
+CATEGORY="Archive"
+SUMMARY="Long Range ZIP archiver"
+DESCRIPTION="This is a compression program optimised for large files. The
+larger the file and the more memory you have, the better the compression
+advantage this will provide, especially once the files are larger than
+100MB. The advantage can be chosen to be either size (much smaller than
+bzip2) or speed (much faster than bzip2)."
+HOMEPAGE="http://ck.kolivas.org/apps/lrzip/README"
+SRC_URI="http://ck.kolivas.org/apps/lrzip/${P}.tar.bz2"
+PATCH_URI="0.612-exeext.patch
+	   0.612-no-undefined.patch
+	   0.612-va_list.patch"
+
+PKG_NAMES="${PN} liblrzip0 liblrzip-devel"
+lrzip_CONTENTS="usr/bin/lr* usr/share/"
+liblrzip0_CONTENTS="usr/bin/cyglrzip-0.dll"
+liblrzip0_SUMMARY="${SUMMARY%r} library (runtime)"
+liblrzip_devel_CONTENTS="usr/include/ usr/lib/"
+liblrzip_devel_SUMMARY="${SUMMARY%r} library (development)"
+
+KEEP_LA_FILES="none"
