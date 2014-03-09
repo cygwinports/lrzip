@@ -1,5 +1,5 @@
 NAME="lrzip"
-VERSION=0.614
+VERSION=0.616
 RELEASE=1
 CATEGORY="Archive"
 SUMMARY="Long Range ZIP archiver"
@@ -10,11 +10,15 @@ advantage this will provide, especially once the files are larger than
 bzip2) or speed (much faster than bzip2)."
 HOMEPAGE="http://ck.kolivas.org/apps/lrzip/README"
 SRC_URI="http://ck.kolivas.org/apps/lrzip/lrzip-${VERSION}.tar.bz2"
-PATCH_URI="0.612-exeext.patch
-	   0.612-no-undefined.patch
-	   0.612-va_list.patch"
+PATCH_URI="
+	0.612-exeext.patch
+	0.612-no-undefined.patch
+	0.612-va_list.patch
+	0.616-threads.patch
+	0.616-cygwin64.patch
+"
 
-PKG_NAMES="${PN} liblrzip0 liblrzip-devel"
+PKG_NAMES="${NAME} liblrzip0 liblrzip-devel"
 lrzip_CONTENTS="usr/bin/lr* usr/share/"
 liblrzip0_CONTENTS="usr/bin/cyglrzip-0.dll"
 liblrzip0_SUMMARY="${SUMMARY%r} library (runtime)"
