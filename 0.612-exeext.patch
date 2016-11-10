@@ -6,6 +6,6 @@
  	$(LN_S) -f lrzip$(EXEEXT) $(DESTDIR)$(bindir)/lrzcat$(EXEEXT)
 -	$(LN_S) -f lrztar$(EXEEXT) $(DESTDIR)$(bindir)/lrzuntar$(EXEEXT)
 +	$(LN_S) -f lrztar $(DESTDIR)$(bindir)/lrzuntar
+ 	$(LN_S) -f lrzip$(EXEEXT) $(DESTDIR)$(bindir)/lrz$(EXEEXT)
  
  
- uninstall-local:

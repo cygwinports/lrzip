@@ -1,5 +1,5 @@
 NAME="lrzip"
-VERSION=0.621
+VERSION=0.631
 RELEASE=1
 CATEGORY="Archive"
 SUMMARY="Long Range ZIP archiver"
@@ -15,7 +15,6 @@ PATCH_URI="
 	0.612-no-undefined.patch
 	0.612-va_list.patch
 	0.616-cygwin64.patch
-	0.621-fake_mremap.patch
 "
 
 PKG_NAMES="${NAME} liblrzip0 liblrzip-devel"
